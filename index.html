@@ -12,12 +12,7 @@
   <link rel="icon" type="image/svg+xml" href="img/favicon.ico" />
 
   <!-- Bootstrap 5 CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
 
   <!-- Project Styles -->
   <link rel="stylesheet" href="css/style.css" />
@@ -303,13 +298,499 @@
     </div>
   </footer>
 
-  <!-- MODAL PLACEHOLDER -->
+  <!-- MODALS (courses + jobs per program) -->
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmhEXKXPpBMDosCyFGKc4L3ZkyMy"
-    crossorigin="anonymous"
-  ></script>
+  <!-- ANIMATION AND VISUAL EFFECTS -->
+  <div class="modal fade" id="modal-ave-courses" tabindex="-1" aria-labelledby="modal-ave-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-ave-courses-title">Animation and Visual Effects — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">Required Major Courses (39 credits)</p>
+          <div class="course-item"><span class="course-name">CGT 11200 — Sketching For Visualization And Communication</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11600 — Geometric Modeling For Visualization And Communication</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11800 — Fundamentals Of Imaging Technology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 12300 — Animation Foundations</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 14100 — Internet Foundations Technologies And Development</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 14700 — Visual Effects Introduction</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 17208 — User Experience Design Studio I: Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 20500 — Portfolio Review</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 24100 — Introduction To Computer Animation</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25001 — Computer Graphics Professional Practices I</span><span class="course-credits">1 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 27000 — Introduction To Data Visualization</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 30505 — Portfolio II</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 40500 — Senior Portfolio Review</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41101 — Contemporary Problems In Applied Computer Graphics I</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41201 — Contemporary Problems In Applied Computer Graphics II</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 44200 — Production For Computer Animation (taken twice for 6 cr total)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 45001 — Computer Graphics Professional Practices II</span><span class="course-credits">1 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-ave-jobs" tabindex="-1" aria-labelledby="modal-ave-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-ave-jobs-title">Animation and Visual Effects — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">3D Modeler</div>
+          <div class="job-item">Technical Director</div>
+          <div class="job-item">Visual Effects Compositor</div>
+          <div class="job-item">Motion Graphics Compositor</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPUTER AND INFORMATION TECHNOLOGY -->
+  <div class="modal fade" id="modal-cit-courses" tabindex="-1" aria-labelledby="modal-cit-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-cit-courses-title">Computer and Information Technology — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">Required Major Courses (30 credits)</p>
+          <div class="course-item"><span class="course-name">CNIT 15501 — Introduction To Software Development Concepts</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 17600 — Information Technology Architectures</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 18000 — Introduction To Systems Development (Gateway to CIT)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 24200 — System Administration</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 25501 — Object-Oriented Programming Introduction</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 27000 — Cybersecurity Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 27200 — Database Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 28000 — Systems Analysis And Design Methods</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 32000 — Policy, Regulation, And Globalization In Information Technology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 48000 — Managing Information Technology Projects</span><span class="course-credits">3 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-cit-jobs" tabindex="-1" aria-labelledby="modal-cit-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-cit-jobs-title">Computer and Information Technology — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">IT Support Analyst</div>
+          <div class="job-item">App Developer</div>
+          <div class="job-item">Tech Support Engineer</div>
+          <div class="job-item">Software Developer</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPUTING INFRASTRUCTURE AND NETWORK ENGINEERING TECHNOLOGY -->
+  <div class="modal fade" id="modal-cinet-courses" tabindex="-1" aria-labelledby="modal-cinet-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-cinet-courses-title">Computing Infrastructure and Network Engineering Technology — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">CIT Major Courses (48 credits)</p>
+          <div class="course-item"><span class="course-name">CNIT 15501 — Introduction To Software Development Concepts</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 17600 — Information Technology Architectures</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 18000 — Introduction To Systems Development OR CNIT 18200 — System And Organizational Security</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 24200 — System Administration</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 25501 — Object-Oriented Programming Introduction</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 27000 — Cybersecurity Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 27200 — Database Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 31500 — Systems Programming</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34400 — Network Engineering Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 32000 — Policy, Regulation, And Globalization In IT OR CNIT 37100 — Cyberlaw And Ethics</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34000 — UNIX Administration</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34220 — Network Administration (3 credits required)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34500 — Internetwork Design And Implementation (3 credits required)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34600 — Wireless Networks (3 credits required)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 45500 — Network Security</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 48000 — Managing Information Technology Projects</span><span class="course-credits">3 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-cinet-jobs" tabindex="-1" aria-labelledby="modal-cinet-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-cinet-jobs-title">Computing Infrastructure and Network Engineering Technology — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">Systems Administrator</div>
+          <div class="job-item">Operations Engineer</div>
+          <div class="job-item">Network Engineer</div>
+          <div class="job-item">Cloud Security Engineer</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CYBERSECURITY -->
+  <div class="modal fade" id="modal-cyber-courses" tabindex="-1" aria-labelledby="modal-cyber-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-cyber-courses-title">Cybersecurity — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">CIT Core Courses</p>
+          <div class="course-item"><span class="course-name">CNIT 15501 — Introduction To Software Development Concepts</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 17600 — Information Technology Architectures</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 18200 — System And Organizational Security</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 24200 — System Administration</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 25501 — Object-Oriented Programming Introduction</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 27000 — Cybersecurity Fundamentals I</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 27200 — Database Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34000 — UNIX Administration</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34220 — Network Administration (3 credits required)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 34400 — Network Engineering Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 48000 — Managing Information Technology Projects</span><span class="course-credits">3 cr</span></div>
+          <p class="course-group-title">Cybersecurity Required Courses</p>
+          <div class="course-item"><span class="course-name">CNIT 27100 — Cybersecurity Fundamentals II</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 37000 — Introduction To Cryptography</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 37100 — Cyberlaw And Ethics</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 32300 — Basic Cyberforensics</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 42200 — Cyber Criminology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 45500 — Network Security</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 47000 — Incident Response Management</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 47100 — Vulnerability Analysis And Testing</span><span class="course-credits">3 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-cyber-jobs" tabindex="-1" aria-labelledby="modal-cyber-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-cyber-jobs-title">Cybersecurity — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">Digital Security Consultant</div>
+          <div class="job-item">Systems Security Engineer</div>
+          <div class="job-item">IT Security Operator</div>
+          <div class="job-item">Security Consultant</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATA ANALYTICS, TECHNOLOGIES AND APPLICATIONS -->
+  <div class="modal fade" id="modal-data-courses" tabindex="-1" aria-labelledby="modal-data-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-data-courses-title">Data Analytics, Technologies and Applications — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">CIT Core Courses (27 credits)</p>
+          <div class="course-item"><span class="course-name">CNIT 15501 — Introduction To Software Development Concepts</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 17600 — Information Technology Architectures</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 18000 — Introduction To Systems Development</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 24200 — System Administration</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 25501 — Object-Oriented Programming Introduction</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 27000 — Cybersecurity Fundamentals I</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 28000 — Systems Analysis And Design Methods</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 32000 — Policy, Regulation, And Globalization In Information Technology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 48000 — Managing Information Technology Projects</span><span class="course-credits">3 cr</span></div>
+          <p class="course-group-title">DATA Core Courses (21 credits)</p>
+          <div class="course-item"><span class="course-name">CNIT 27200 — Database Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 32200 — Research Methodology And Design</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 37200 — Database Programming</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 39200 — Enterprise Data Management</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 48200 — Six Sigma Data Quality For Continuous Improvement</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 48300 — Applied Machine Learning</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CNIT 48400 — Applications In Data Science</span><span class="course-credits">3 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-data-jobs" tabindex="-1" aria-labelledby="modal-data-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-data-jobs-title">Data Analytics, Technologies and Applications — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">Data Engineer</div>
+          <div class="job-item">Data Analyst</div>
+          <div class="job-item">Database Administrator</div>
+          <div class="job-item">Data Scientist</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GAME DEVELOPMENT -->
+  <div class="modal fade" id="modal-game-courses" tabindex="-1" aria-labelledby="modal-game-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-game-courses-title">Game Development — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">Required Major Courses (39 credits)</p>
+          <div class="course-item"><span class="course-name">CGT 10501 — Introduction To Games</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11505 — Scripting And Computational Thinking</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11600 — Geometric Modeling For Visualization And Communication</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11800 — Fundamentals Of Imaging Technology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 14100 — Internet Foundations Technologies And Development</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 17208 — User Experience Design Studio I: Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 20500 — Portfolio Review</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 24500 — Game Development I: Core Skills And Technologies</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25001 — Computer Graphics Professional Practices I</span><span class="course-credits">1 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25500 — Game Development II: Design And Psychology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 27000 — Introduction To Data Visualization</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 30505 — Portfolio II</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 36500 — Game Development Practicum (taken twice for 6 cr total)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 40500 — Senior Portfolio Review</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41101 — Contemporary Problems In Applied Computer Graphics I</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41201 — Contemporary Problems In Applied Computer Graphics II</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 45001 — Computer Graphics Professional Practices II</span><span class="course-credits">1 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-game-jobs" tabindex="-1" aria-labelledby="modal-game-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-game-jobs-title">Game Development — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">Technical Artist</div>
+          <div class="job-item">Technical Game Designer</div>
+          <div class="job-item">Environment Artist</div>
+          <div class="job-item">Gameplay Programmer</div>
+          <div class="job-item">Simulation Designer</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THEMED ENTERTAINMENT DESIGN -->
+  <div class="modal fade" id="modal-themed-courses" tabindex="-1" aria-labelledby="modal-themed-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-themed-courses-title">Themed Entertainment Design — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">Required Major Courses (49 credits)</p>
+          <div class="course-item"><span class="course-name">CGT 11200 — Sketching For Visualization And Communication</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11600 — Geometric Modeling For Visualization And Communication</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11700 — Illustrating For Visualization And Communication</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11800 — Fundamentals Of Imaging Technology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 12300 — Animation Foundations</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 14700 — Visual Effects Introduction</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 20400 — Introduction To Themed Attraction Design</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 20500 — Portfolio Review</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25001 — Computer Graphics Professional Practices I</span><span class="course-credits">1 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25100 — Principles Of Creative Design</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 30505 — Portfolio II</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 31300 — Digital Painting I For Computer Graphics</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 31700 — Planning And Communicating Themed Attraction Design</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 32800 — Business Of Themed Entertainment</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 36700 — Previsualization In Themed Entertainment Design</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 40500 — Senior Portfolio Review</span><span class="course-credits">0 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 40700 — Current And Future Trends In Themed Attraction Design</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41101 — Contemporary Problems In Applied Computer Graphics I</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 44200 — Production For Computer Animation</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 45001 — Computer Graphics Professional Practices II</span><span class="course-credits">1 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-themed-jobs" tabindex="-1" aria-labelledby="modal-themed-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-themed-jobs-title">Themed Entertainment Design — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">Motion Graphics Artist</div>
+          <div class="job-item">Set Designer</div>
+          <div class="job-item">Interactive Designer</div>
+          <div class="job-item">Project Producer</div>
+          <div class="job-item">Attraction Designer</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UX DESIGN -->
+  <div class="modal fade" id="modal-ux-courses" tabindex="-1" aria-labelledby="modal-ux-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-ux-courses-title">UX Design — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">Required Major Courses (45 credits)</p>
+          <div class="course-item"><span class="course-name">CGT 11800 — Fundamentals Of Imaging Technology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 14100 — Internet Foundations Technologies And Development</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 17207 — User Experience Design Experience Studio I</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 17208 — User Experience Design Studio I: Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25001 — Computer Graphics Professional Practices I</span><span class="course-credits">1 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 27000 — Introduction To Data Visualization</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 27108 — User Experience Design Studio II: Screen</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 27207 — User Experience Design Experience Studio II (taken twice)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 27208 — User Experience Design Studio III: Cross-Channel</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 37108 — User Experience Design Studio IV: Strategy</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 37207 — User Experience Design Experience Studio III (taken twice)</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 37208 — User Experience Design Studio V: Specialization</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41101 — Contemporary Problems In Applied Computer Graphics I</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41201 — Contemporary Problems In Applied Computer Graphics II</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 45001 — Computer Graphics Professional Practices II</span><span class="course-credits">1 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-ux-jobs" tabindex="-1" aria-labelledby="modal-ux-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-ux-jobs-title">UX Design — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">User Experience Designer</div>
+          <div class="job-item">User Researcher</div>
+          <div class="job-item">Product Manager</div>
+          <div class="job-item">User Interface Designer</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEB PROGRAMMING AND DESIGN -->
+  <div class="modal fade" id="modal-web-courses" tabindex="-1" aria-labelledby="modal-web-courses-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-web-courses-title">Web Programming and Design — Required Courses</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="course-group-title">Required Major Courses (36 credits)</p>
+          <div class="course-item"><span class="course-name">CGT 11505 — Scripting And Computational Thinking</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11600 — Geometric Modeling For Visualization And Communication</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 11800 — Fundamentals Of Imaging Technology</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 14100 — Internet Foundations Technologies And Development</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 17208 — User Experience Design Studio I: Fundamentals</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25001 — Computer Graphics Professional Practices I</span><span class="course-credits">1 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 25300 — Front-End Web Development</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 35300 — Principles Of Interactive And Dynamic Media</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 35600 — Web Programming, Development And Data Integration</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 37000 — Interactive Data Visualization</span><span class="course-credits">3 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41101 — Contemporary Problems In Applied Computer Graphics I</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 41201 — Contemporary Problems In Applied Computer Graphics II</span><span class="course-credits">2 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 45001 — Computer Graphics Professional Practices II</span><span class="course-credits">1 cr</span></div>
+          <div class="course-item"><span class="course-name">CGT 45600 — Advanced Web Programming, Development And Data Integration</span><span class="course-credits">3 cr</span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-web-jobs" tabindex="-1" aria-labelledby="modal-web-jobs-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-acc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-web-jobs-title">Web Programming and Design — Career Paths</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="job-item">User Interface Designer</div>
+          <div class="job-item">Web Developer</div>
+          <div class="job-item">Database Administrator</div>
+          <div class="job-item">Web Architect</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-purdue-gold" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Quiz logic -->
   <script src="js/quiz.js" defer></script>
