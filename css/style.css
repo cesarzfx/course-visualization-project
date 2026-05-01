@@ -292,13 +292,6 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
-.modal-acc .modal-header .btn-close {
-  filter: invert(1);
-  opacity: 0.8;
-}
-.modal-acc .modal-header .btn-close:hover {
-  opacity: 1;
-}
 .modal-acc .modal-body {
   padding: 1.5rem;
   max-height: 65vh;
