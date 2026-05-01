@@ -33,6 +33,15 @@ a:hover {
   text-decoration: underline;
 }
 
+.section-label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #CFB991;
+}
+
 .navbar-acc {
   background-color: #000000;
   border-bottom: 3px solid #CFB991;
@@ -255,30 +264,6 @@ a:hover {
   outline: none;
 }
 
-.btn-purdue-submit {
-  background-color: #DAAA00;
-  border: 2px solid #DAAA00;
-  color: #000000;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border-radius: 6px;
-  padding: 0.75rem 2rem;
-  width: 100%;
-  transition: all 0.25s ease;
-}
-.btn-purdue-submit:hover, .btn-purdue-submit:focus {
-  background-color: #8E6F3E;
-  border-color: #8E6F3E;
-  color: #fff;
-}
-.btn-purdue-submit:focus {
-  box-shadow: 0 0 0 3px rgba(218, 170, 0, 0.4);
-  outline: none;
-}
-
 .modal-acc .modal-header {
   background-color: #000000;
   border-bottom: 3px solid #CFB991;
@@ -462,17 +447,8 @@ a:hover {
 .footer-acc a:hover {
   color: rgb(191, 162, 109);
 }
-
-.text-gold {
-  color: #CFB991;
-}
-
-.text-aged {
-  color: #8E6F3E;
-}
-
-.text-steam {
-  color: #C4BFC0;
+.footer-acc .footer-small {
+  font-size: 0.8rem;
 }
 
 .scroll-target {

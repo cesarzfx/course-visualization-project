@@ -51,6 +51,17 @@ a {
   &:hover { color: $rush; text-decoration: underline; }
 }
 
+
+// SECTION LABEL (hero eyebrow text)
+.section-label {
+  font-family: $font-display;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $gold;
+}
+
 // NAVBAR
 .navbar-acc {
   background-color: $black;
@@ -259,22 +270,6 @@ a {
   &:focus { box-shadow: 0 0 0 3px rgba($gold, 0.4); outline: none; }
 }
 
-.btn-purdue-submit {
-  background-color: $rush;
-  border: 2px solid $rush;
-  color: $black;
-  font-family: $font-display;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border-radius: $radius;
-  padding: 0.75rem 2rem;
-  width: 100%;
-  transition: $transition;
-  &:hover, &:focus { background-color: $aged; border-color: $aged; color: #fff; }
-  &:focus { box-shadow: 0 0 0 3px rgba($rush, 0.4); outline: none; }
-}
 
 // MODALS
 .modal-acc {
@@ -464,12 +459,9 @@ a {
   }
 
   a { color: $gold; &:hover { color: color.adjust($gold, $lightness: -10%); } }
+  .footer-small { font-size: 0.8rem; }
 }
 
-// UTILITIES
-.text-gold  { color: $gold; }
-.text-aged  { color: $aged; }
-.text-steam { color: $steam; }
 .scroll-target { scroll-margin-top: 80px; }
 
 // RESPONSIVE
