@@ -15,8 +15,7 @@ $gold-light:  rgba($gold, 0.15);
 $font-display: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $font-body:    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 $font-mono:    'Courier New', Courier, monospace;
-
-// SHARED TOKENS 
+ 
 $radius:      6px;
 $radius-lg:   10px;
 $shadow:      0 2px 12px rgba(0, 0, 0, 0.10);
@@ -128,7 +127,7 @@ a {
 }
 
 .section-quiz {
-  background-color: $dark-bg;
+  background-color: #f3eee4;
   padding: 4rem 0;
 }
 
@@ -156,8 +155,14 @@ a {
 }
 
 .section-quiz {
-  .section-heading { color: $gold; }
-  .section-subheading { color: $steam; }
+  .section-heading {
+    color: $black;
+    &::after { background-color: $aged; }
+  }
+  .section-subheading {
+    color: $cool-gray;
+    max-width: 620px;
+  }
 }
 
 // PROGRAM CARDS
@@ -361,43 +366,47 @@ a {
 
 // QUIZ
 .quiz-card {
-  background-color: rgba(#fff, 0.04);
-  border: 1px solid rgba($gold, 0.2);
+  background-color: $card-bg;
+  border: 1px solid rgba($gold, 0.35);
   border-radius: $radius-lg;
-  padding: 2rem;
-  @media (max-width: 768px) { padding: 1.25rem; }
+  box-shadow: $shadow;
+  padding: 1.5rem;
+
+  @media (max-width: 768px) { padding: 1rem; }
 }
 
-.quiz-progress-bar {
-  height: 4px;
-  background-color: rgba($gold, 0.2);
-  border-radius: 2px;
-  margin-bottom: 1.75rem;
-  overflow: hidden;
-  .quiz-progress-fill {
-    height: 100%;
-    background-color: $rush;
-    border-radius: 2px;
-    transition: width 0.4s ease;
+.quiz-accordion {
+  .accordion-item {
+    background-color: #fff;
+    border: 1px solid rgba($gold, 0.35);
+    border-radius: $radius;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
   }
-}
 
-.quiz-question {
-  font-family: $font-display;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1.25rem;
-  line-height: 1.4;
-}
+  .accordion-button.quiz-question {
+    background-color: #fff;
+    color: $black;
+    font-family: $font-display;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0;
+    padding: 1rem 1.25rem;
+    box-shadow: none;
 
-.quiz-counter {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: $steam;
-  margin-bottom: 0.4rem;
+    &:not(.collapsed) {
+      background-color: rgba($gold, 0.22);
+      color: $aged;
+      border-bottom: $gold;
+      box-shadow: none;
+    }
+  }
+
+  .accordion-body {
+    background-color: $card-bg;
+    padding: 1rem 1.25rem 1.25rem;
+  }
 }
 
 .quiz-option {
@@ -405,56 +414,34 @@ a {
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
-  border: 1px solid rgba($gold, 0.25);
+  border: 1px solid rgba($gold, 0.35);
   border-radius: $radius;
   margin-bottom: 0.6rem;
   cursor: pointer;
   transition: $transition;
-  color: $steam;
+  color: $black;
+  background-color: #fff;
   font-size: 0.95rem;
 
-  input[type="radio"] { accent-color: $gold; width: 16px; height: 16px; flex-shrink: 0; }
+  &:last-child { margin-bottom: 0; }
 
-  &:hover { background-color: $gold-light; border-color: $gold; color: #fff; }
-  &:has(input:checked) { background-color: rgba($gold, 0.2); border-color: $gold; color: $gold; }
-}
-
-.quiz-result {
-  display: none;
-  background-color: $black;
-  border: 2px solid $gold;
-  border-radius: $radius-lg;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 1.5rem;
-  &.visible { display: block; }
-
-  .result-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: $steam;
-    margin-bottom: 0.4rem;
+  input[type="radio"] {
+    accent-color: $aged;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
   }
 
-  .result-program {
-    font-family: $font-display;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: $gold;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+  &:hover {
+    background-color: rgba($gold, 0.16);
+    border-color: $gold;
   }
 
-  .result-description {
-    font-size: 0.9rem;
-    color: $steam;
-    max-width: 480px;
-    margin: 0 auto 1.25rem;
-    line-height: 1.6;
+  &:has(input:checked) {
+    background-color: $gold-light;
+    border-color: $aged;
+    color: $aged;
+    font-weight: 500;
   }
 }
 

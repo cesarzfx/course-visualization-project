@@ -9,7 +9,7 @@
   <title>ACC Course Visualization</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="img/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
   <!-- Bootstrap 5 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
@@ -262,18 +262,186 @@
         <div class="mb-4">
           <h2 class="section-heading" id="quiz-heading">Find Your Program</h2>
           <p class="section-subheading">
-            Answer 10 quick questions about your interests and we'll recommend
-            the ACC program that fits you best.
+            Answer 10 quick questions to explore your interests and see how they align with ACC programs.
           </p>
         </div>
 
         <!-- Quiz card -->
         <div class="row justify-content-center">
           <div class="col-12 col-lg-8">
-            <div class="quiz-card" role="form" aria-label="Program interest quiz">
-              <p class="text-steam text-center" style="opacity: 0.5; padding: 2rem 0;">
-                Quiz
-              </p>
+            <div class="quiz-card" aria-label="Program interest quiz">
+              <div class="accordion quiz-accordion" id="quizAccordion">
+
+                <!-- Q1 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh1">
+                    <button class="accordion-button quiz-question" type="button" data-bs-toggle="collapse" data-bs-target="#qa1" aria-expanded="true" aria-controls="qa1">
+                      1. Which activity sounds most exciting to you?
+                    </button>
+                  </h3>
+                  <div id="qa1" class="accordion-collapse collapse show" aria-labelledby="qh1" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q1" /> Creating a short animated film</label>
+                      <label class="quiz-option"><input type="radio" name="q1" /> Building and securing a company network</label>
+                      <label class="quiz-option"><input type="radio" name="q1" /> Designing a mobile app people love</label>
+                      <label class="quiz-option"><input type="radio" name="q1" /> Analyzing sales data to find trends</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh2">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa2" aria-expanded="false" aria-controls="qa2">
+                      2. When a website loads slowly, your first thought is:
+                    </button>
+                  </h3>
+                  <div id="qa2" class="accordion-collapse collapse" aria-labelledby="qh2" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q2" /> The server or network must be misconfigured</label>
+                      <label class="quiz-option"><input type="radio" name="q2" /> The code is probably inefficient</label>
+                      <label class="quiz-option"><input type="radio" name="q2" /> Could be a security issue blocking resources</label>
+                      <label class="quiz-option"><input type="radio" name="q2" /> The design might be loading too many assets</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh3">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa3" aria-expanded="false" aria-controls="qa3">
+                      3. Which college course would you enjoy most?
+                    </button>
+                  </h3>
+                  <div id="qa3" class="accordion-collapse collapse" aria-labelledby="qh3" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q3" /> 3D Modeling and Animation</label>
+                      <label class="quiz-option"><input type="radio" name="q3" /> Ethical Hacking and Forensics</label>
+                      <label class="quiz-option"><input type="radio" name="q3" /> Database Design and Programming</label>
+                      <label class="quiz-option"><input type="radio" name="q3" /> UX Research and Prototyping</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh4">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa4" aria-expanded="false" aria-controls="qa4">
+                      4. Pick the work environment that appeals to you most:
+                    </button>
+                  </h3>
+                  <div id="qa4" class="accordion-collapse collapse" aria-labelledby="qh4" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q4" /> A creative studio working on films or games</label>
+                      <label class="quiz-option"><input type="radio" name="q4" /> A security operations center monitoring threats</label>
+                      <label class="quiz-option"><input type="radio" name="q4" /> A data team at a tech or healthcare company</label>
+                      <label class="quiz-option"><input type="radio" name="q4" /> A product team designing apps and websites</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh5">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa5" aria-expanded="false" aria-controls="qa5">
+                      5. A friend asks for your help with a project. Which do you pick?
+                    </button>
+                  </h3>
+                  <div id="qa5" class="accordion-collapse collapse" aria-labelledby="qh5" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q5" /> Editing their YouTube video with motion graphics</label>
+                      <label class="quiz-option"><input type="radio" name="q5" /> Setting up their home network securely</label>
+                      <label class="quiz-option"><input type="radio" name="q5" /> Building a website for their small business</label>
+                      <label class="quiz-option"><input type="radio" name="q5" /> Creating a dashboard to track their budget</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh6">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa6" aria-expanded="false" aria-controls="qa6">
+                      6. Which of these problems interests you most?
+                    </button>
+                  </h3>
+                  <div id="qa6" class="accordion-collapse collapse" aria-labelledby="qh6" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q6" /> How do we make virtual characters feel real?</label>
+                      <label class="quiz-option"><input type="radio" name="q6" /> How do we stop hackers from stealing data?</label>
+                      <label class="quiz-option"><input type="radio" name="q6" /> How do we make apps easier for all kinds of people?</label>
+                      <label class="quiz-option"><input type="radio" name="q6" /> How do we turn raw data into useful business decisions?</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh7">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa7" aria-expanded="false" aria-controls="qa7">
+                      7. Which best describes your creative style?
+                    </button>
+                  </h3>
+                  <div id="qa7" class="accordion-collapse collapse" aria-labelledby="qh7" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q7" /> I love storytelling and visual art</label>
+                      <label class="quiz-option"><input type="radio" name="q7" /> I prefer logic, systems, and problem-solving</label>
+                      <label class="quiz-option"><input type="radio" name="q7" /> I like designing clean, user-friendly layouts</label>
+                      <label class="quiz-option"><input type="radio" name="q7" /> I enjoy working with numbers and patterns</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh8">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa8" aria-expanded="false" aria-controls="qa8">
+                      8. Which tech topic could you talk about for hours?
+                    </button>
+                  </h3>
+                  <div id="qa8" class="accordion-collapse collapse" aria-labelledby="qh8" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q8" /> Game engines and real-time rendering</label>
+                      <label class="quiz-option"><input type="radio" name="q8" /> Network protocols and cloud infrastructure</label>
+                      <label class="quiz-option"><input type="radio" name="q8" /> Machine learning and data pipelines</label>
+                      <label class="quiz-option"><input type="radio" name="q8" /> Immersive design and themed experiences</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q9 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh9">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa9" aria-expanded="false" aria-controls="qa9">
+                      9. What kind of outcome do you want from your work?
+                    </button>
+                  </h3>
+                  <div id="qa9" class="accordion-collapse collapse" aria-labelledby="qh9" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q9" /> Something people see and feel emotionally</label>
+                      <label class="quiz-option"><input type="radio" name="q9" /> Systems that stay secure and reliable</label>
+                      <label class="quiz-option"><input type="radio" name="q9" /> Insights that change how a business operates</label>
+                      <label class="quiz-option"><input type="radio" name="q9" /> Products people find intuitive and easy</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q10 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qh10">
+                    <button class="accordion-button quiz-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qa10" aria-expanded="false" aria-controls="qa10">
+                      10. If you could job-shadow someone for a day, who would you choose?
+                    </button>
+                  </h3>
+                  <div id="qa10" class="accordion-collapse collapse" aria-labelledby="qh10" data-bs-parent="#quizAccordion">
+                    <div class="accordion-body">
+                      <label class="quiz-option"><input type="radio" name="q10" /> A VFX artist at a major film studio</label>
+                      <label class="quiz-option"><input type="radio" name="q10" /> A cybersecurity analyst at a tech company</label>
+                      <label class="quiz-option"><input type="radio" name="q10" /> A UX designer at a product startup</label>
+                      <label class="quiz-option"><input type="radio" name="q10" /> A data scientist at a healthcare organization</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -792,8 +960,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Quiz logic -->
-  <script src="js/quiz.js" defer></script>
 
 </body>
 
